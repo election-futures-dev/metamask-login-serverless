@@ -1,0 +1,20 @@
+{
+  "name": "metamask-login-serverless",
+  "version": "1.0.0",
+  "main": "build/auth.js",
+  "scripts": {
+    "build": "tsc && cp -r node_modules build",
+    "zip": "cd build && zip -r build.zip ."
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.8.2"
+  },
+  "dependencies": {
+    "@types/eth-sig-util": "^2.1.0",
+    "@types/jsonwebtoken": "^8.3.7",
+    "eth-sig-util": "^2.5.2",
+    "ethereumjs-util": "^6.2.0",
+    "jsonwebtoken": "^8.5.1"
+  }
+}
